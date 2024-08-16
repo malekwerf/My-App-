@@ -1,0 +1,96 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/log"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+
+        android:layout_width="381dp"
+        android:layout_height="480dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <!-- activity_news.xml -->
+
+
+        <GridLayout
+            android:id="@+id/gridLayout"
+            android:layout_width="357dp"
+            android:layout_height="449dp"
+            android:columnCount="2"
+            android:padding="16dp"
+            android:rowCount="2">
+
+            <ImageView
+                android:id="@+id/imagePackScolaire"
+                android:layout_width="11dp"
+                android:layout_height="150dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:clickable="true"
+                android:onClick="onImageClick"
+                android:src="@drawable/sc" />
+
+            <ImageView
+                android:id="@+id/imagePackScolaire1"
+                android:layout_width="11dp"
+                android:layout_height="150dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:clickable="true"
+                android:onClick="onImageClick"
+                android:src="@drawable/med" />
+
+            <ImageView
+                android:id="@+id/imagePackScolaire2"
+                android:layout_width="11dp"
+                android:layout_height="150dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:clickable="true"
+                android:onClick="onImageClick"
+                android:src="@drawable/starup" />
+
+            <ImageView
+                android:id="@+id/imagePackScolaire3"
+                android:layout_width="11dp"
+                android:layout_height="150dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:clickable="true"
+                android:onClick="onImageClick"
+                android:src="@drawable/a" />
+
+            <!-- Ajoutez des ImageView similaires pour les autres packs -->
+
+        </GridLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="399dp"
+        android:layout_height="171dp"
+        android:gravity="center"
+        android:text="News"
+
+        android:textSize="34sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints,NotSibling"
+        tools:layout_editor_absoluteX="-9dp"
+        tools:layout_editor_absoluteY="28dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

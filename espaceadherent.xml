@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/logoo">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Espace adhérents"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/textadmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/admin"
+        android:gravity="center_vertical"
+        android:text="Administrateur"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:clickable="true"
+        android:onClick="afficherListeContrats"
+        android:padding="8dp"
+        android:layout_marginBottom="8dp" />
+
+
+    <TextView
+        android:id="@+id/textListeContrats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/iconcontrat"
+        android:gravity="center"
+        android:text="Mes Contrats"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:clickable="true"
+        android:onClick="afficherListeContrats"
+        android:padding="8dp"
+
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/textPaiementContrat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/piii"
+        android:gravity="center"
+        android:text="Paiement du Contrat"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:clickable="true"
+        android:onClick="afficherPaiementContrat"
+        android:padding="8dp"
+
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/textHistoriquePaiement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/echancier"
+        android:gravity="center"
+        android:text="Mes échéanciers"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:clickable="true"
+        android:onClick="afficherHistoriquePaiement"
+        android:padding="8dp"
+
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/textPowerbi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/pp"
+        android:gravity="center"
+        android:text="Espace Web Statistiques"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:clickable="true"
+        android:onClick="afficherpower"
+        android:padding="8dp"
+
+        android:layout_marginBottom="8dp" />
+
+</LinearLayout>

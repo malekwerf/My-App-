@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/logoo"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="159dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="Modifier un contrat"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editText_contrat_id"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:hint="ID du Contrat"
+        android:inputType="number" />
+
+    <Spinner
+        android:id="@+id/spinner_branche"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_marginTop="16dp"
+        android:prompt="@string/select_branch"
+        android:spinnerMode="dropdown" />
+
+    <EditText
+        android:id="@+id/textdebut"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_marginTop="16dp"
+        android:hint="Date de Début de l'Effet du Contrat"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/textfin"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginTop="16dp"
+        android:hint="Date de Fin de l'Effet du Contrat"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/editText_montant"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_marginTop="16dp"
+        android:hint="Montant du Contrat"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/button_modifier_contrat"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="16dp"
+        android:text="Modifier Contrat"
+        android:textSize="20dp"
+        android:textColor="@color/black"/>
+
+</LinearLayout>

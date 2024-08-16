@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logoo"
+    android:orientation="vertical">
+
+    <!-- activity_verification_adherent.xml -->
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="184dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Pack Scolaire"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/Email"
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:drawableStart="@drawable/emaill"
+            android:hint="E-mail" />
+
+        <EditText
+            android:id="@+id/numteltEditText"
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:drawableStart="@drawable/tell"
+            android:hint="telephone" />
+
+        <Spinner
+            android:id="@+id/etablissementSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:hint="Choisir l'établissement" />
+
+        <!-- Spinner pour le choix de la formule -->
+
+        <!-- Champ pour le nombre de personnes -->
+        <Spinner
+            android:id="@+id/formuleSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:hint="Choisir la formule" />
+
+        <EditText
+            android:id="@+id/nombrePersonnesEditText"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:drawableStart="@drawable/nbrper"
+            android:hint="Nombre de personnes" />
+
+        <Button
+            android:id="@+id/valider"
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:onClick="validerPackScolaire"
+            android:text="Valider"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <!-- Bouton de soumission -->
+
+
+
+
+</LinearLayout>

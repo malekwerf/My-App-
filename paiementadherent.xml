@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/logoo">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="343dp"
+        android:layout_height="199dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text=" Mes échéanciers"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/idcontrat"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:hint="id_contrat" />
+
+    <Button
+        android:id="@+id/afficherButton"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:text=" detail de paiement"
+        android:textColor="@color/black" />
+
+
+    <TextView
+        android:id="@+id/montanttext"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:padding="8dp"
+        android:text="montant:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/mode_depaiement"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="8dp"
+        android:text="mode de paiement:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/refe"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:padding="8dp"
+        android:text="ref_paiement:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/etat"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:padding="8dp"
+        android:text="Etat:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="invisible"/>
+
+
+    <TextView
+        android:id="@+id/date_expiration"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:padding="8dp"
+        android:text="Date d'expiration:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="invisible"/>
+</LinearLayout>

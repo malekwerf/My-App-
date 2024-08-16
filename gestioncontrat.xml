@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/qs">
+
+    <TextView
+        android:layout_width="399dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Gérer les contrats"
+        android:textColor="@color/black"
+        android:textSize="28dp"
+        android:textStyle="bold" />
+
+
+    <ListView
+        android:id="@+id/listView_contracts"
+        android:layout_width="match_parent"
+        android:layout_height="478dp"
+
+        android:divider="@null"
+        android:dividerHeight="0dp" />
+
+
+    <!-- Bouton pour supprimer un contrat -->
+
+    <TextView
+        android:id="@+id/textView_create_contract"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:clickable="true"
+        android:drawableStart="@drawable/crr"
+        android:focusable="true"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Créer un Contrat"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView_delete_contract"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:padding="16dp"
+
+        android:drawableStart="@drawable/supp"
+        android:text="Supprimer  Contrat"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/textViewupdatecontract"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:padding="16dp"
+        android:drawableStart="@drawable/mise"
+        android:text="Modifier  Contrat"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+</LinearLayout>

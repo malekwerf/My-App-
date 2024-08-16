@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/logoo"
+    android:padding="16dp">
+
+    <!-- Titre -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="49dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:text="Payez en ligne"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="97dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal">
+
+        <!-- Image 1 -->
+        <ImageView
+            android:layout_width="26dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/imm" />
+
+    </LinearLayout>
+
+
+    <!-- Champ pour le Nom sur la carte -->
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_marginBottom="16dp"
+        android:hint="E-mail"
+        android:inputType="text" />
+    <EditText
+        android:id="@+id/nomCarteEditText"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Nom sur la carte"
+        android:inputType="text" />
+
+    <!-- Champ pour le numéro de carte -->
+    <EditText
+        android:id="@+id/numeroCarteEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Numéro de carte"
+        android:inputType="number" />
+
+
+
+    <!-- Bouton de paiement -->
+    <Button
+        android:id="@+id/payerButton"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:text="Payer"
+        android:textSize="25dp"
+        android:textColor="@color/black" />
+
+</LinearLayout>

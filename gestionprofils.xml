@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/logoo"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Gérer les profils"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/listViewProfiles"
+        android:layout_width="match_parent"
+        android:layout_height="410dp"
+        android:layout_weight="1"
+        android:divider="@null" />
+
+    <TextView
+        android:id="@+id/textViewUpdateProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="16dp"
+        android:text="@string/modifier_un_adherent"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:drawableStartCompat="@drawable/up" />
+
+    <TextView
+        android:id="@+id/textViewDeleteProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="16dp"
+        android:text="@string/supprimer_un_adherent"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:drawableStartCompat="@drawable/su" />
+
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/logoo"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="382dp"
+        android:layout_height="164dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Création contrat"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/editnum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Num_adherent"
+
+        android:textSize="20sp" />
+    <Spinner
+        android:id="@+id/spinnerBranche"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:prompt="@string/select_branch"
+        android:spinnerMode="dropdown" />
+
+    <!-- Sélection de la date de début -->
+    <TextView
+        android:id="@+id/textViewDateDebut"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:text="Date de début du contrat"
+        android:textSize="20dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:onClick="showDatePickerDialog" />
+
+    <!-- Sélection de la date de fin -->
+    <TextView
+        android:id="@+id/textViewDateFin"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:textSize="20dp"
+        android:text="Date de fin du contrat"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:onClick="showDatePickerDialog" />
+
+
+
+    <!-- Champ pour le montant -->
+    <EditText
+        android:id="@+id/editTextMontant"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:hint="Montant du contrat"
+        android:inputType="numberDecimal" />
+
+    <!-- Bouton pour soumettre le contrat -->
+    <Button
+        android:id="@+id/buttonSubmitContract"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:text="Soumettre le contrat"
+        android:textSize="20dp"
+        android:textColor="@color/black"/>
+
+</LinearLayout>

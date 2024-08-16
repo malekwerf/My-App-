@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:background="@drawable/logoo">
+
+
+    <!-- Titre -->
+    <TextView
+        android:layout_width="386dp"
+        android:layout_height="167dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Espace non adherents"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+    <!-- Layout pour les boutons de gauche -->
+
+
+
+        <!-- Layout pour les boutons de droite -->
+
+
+
+            <!-- Bouton 3 -->
+
+    <TextView
+        android:id="@+id/contacttext"
+        android:layout_width="235dp"
+        android:layout_height="64dp"
+        android:drawableStart="@drawable/ccon"
+        android:text="Contact"
+        android:textColor="#0E0E0E"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        android:padding="8dp"
+        android:layout_marginBottom="8dp"/>
+
+            <!-- Bouton 4 -->
+    <TextView
+        android:id="@+id/newstext"
+        android:layout_width="183dp"
+        android:layout_height="70dp"
+        android:text="News"
+        android:textColor="#1C1C1C"
+        android:drawableStart="@drawable/newssss"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        android:padding="8dp"
+        android:layout_marginBottom="8dp"/>
+
+
+    <TextView
+        android:id="@+id/agencetext"
+        android:layout_width="235dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="8dp"
+        android:drawableStart="@drawable/lo"
+        android:gravity="center_vertical"
+        android:padding="8dp"
+        android:text="Listes agences"
+        android:textColor="#191717"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/reclamationtext"
+        android:layout_width="240dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="8dp"
+        android:drawableStart="@drawable/ml"
+        android:gravity="center_vertical"
+        android:padding="8dp"
+        android:text="Réclamation"
+        android:textColor="#151414"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+        </LinearLayout>
+
+
+

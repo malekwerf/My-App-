@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/logoo"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="370dp"
+        android:layout_height="174dp"
+        android:gravity="center"
+        android:text="Modifier adherent"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextNumAdherent"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:hint="Numéro d'adhérent"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editTextNom"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Nom" />
+
+    <EditText
+        android:id="@+id/editTextPrenom"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:hint="Prénom" />
+
+    <EditText
+        android:id="@+id/editTextAdresse"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:hint="Adresse" />
+
+    <EditText
+        android:id="@+id/editTextTelephone"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:hint="Téléphone"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/editTextMotDePasse"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="Mot de passe"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/buttonModifier"
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:text="Modifier"
+        android:textColor="#151414"
+        android:textSize="20sp" />
+
+</LinearLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/qss"
+    android:padding="16dp">
+    <RelativeLayout
+        android:layout_width="376dp"
+        android:layout_height="221dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="377dp"
+            android:layout_height="261dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            app:srcCompat="@drawable/top_background"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="-20dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="363dp"
+            android:layout_height="211dp"
+            android:gravity="center"
+            android:text="Réclamation List"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="48dp"
+            tools:layout_editor_absoluteY="96dp" />
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/textViewid"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:text="ID"
+
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    <TextView
+        android:id="@+id/textViewNomPrenom"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:text="Nomprenom"
+        android:drawableStart="@drawable/nn"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textViewTelephone"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="telephone"
+        android:drawableStart="@drawable/tell"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textViewEmail"
+        android:layout_width="match_parent"
+        android:drawableStart="@drawable/emaill"
+        android:layout_height="38dp"
+        android:text="email"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textViewDescription"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:drawableStart="@drawable/des"
+        android:text="Description"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textViewSinistre"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:text="Sinistre"
+        android:drawableStart="@drawable/sinistre"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        />
+    <TextView
+        android:id="@+id/textViewdate"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:text="Date"
+        android:drawableStart="@drawable/date"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        />
+    <TextView
+        android:id="@+id/textViewEtat"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:text="Etat"
+
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        />
+
+
+</LinearLayout>

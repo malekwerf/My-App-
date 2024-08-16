@@ -1,0 +1,110 @@
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/logoo">
+
+
+    <!-- RadioGroup pour le choix de genre -->
+    <TextView
+        android:layout_width="382dp"
+        android:layout_height="109dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="Informations Personnelles"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/genreRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/mrRadioButton"
+            android:layout_width="69dp"
+            android:layout_height="wrap_content"
+            android:text="Mr" />
+
+        <RadioButton
+            android:id="@+id/mmeRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mme" />
+
+    </RadioGroup>
+
+    <!-- Champ Nom et Prénom -->
+    <EditText
+        android:id="@+id/nomPrenomEditText"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:drawableStart="@drawable/user"
+        android:hint="Nom et Prénom" />
+
+    <!-- Spinner pour le choix du type de pièce d'identité -->
+    <EditText
+        android:id="@+id/typePiece"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+android:drawableStart="@drawable/lll"
+        android:hint="CIN ou Passeport" />
+
+    <!-- Champ Date de naissance -->
+    <EditText
+        android:id="@+id/dateNaissanceEditText"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:drawableStart="@drawable/agee"
+        android:hint="Date de naissance"
+        android:inputType="date" />
+
+    <!-- Champ Téléphone -->
+    <EditText
+        android:id="@+id/telephoneEditText"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:drawableStart="@drawable/tell"
+        android:hint="Téléphone"
+        android:inputType="phone" />
+
+    <!-- Champ Email -->
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:drawableStart="@drawable/emaill"
+        android:hint="Email"
+        android:inputType="textEmailAddress" />
+
+    <!-- Champ Profession -->
+    <EditText
+        android:id="@+id/professionEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:drawableStart="@drawable/job"
+        android:hint="Profession" />
+
+    <!-- Spinner pour le choix du gouvernorat -->
+    <Spinner
+        android:id="@+id/gouvernoratSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+
+        android:hint="Choisir le gouvernorat" />
+
+    <!-- Bouton de soumission -->
+    <Button
+        android:id="@+id/buttonvalide"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:onClick="validerInformationsPersonnelles"
+        android:text="Valider"
+        android:textColor="#0C0B0B"
+        android:textSize="24sp" />
+
+</LinearLayout>

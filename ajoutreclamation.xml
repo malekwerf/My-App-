@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/logoo">
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="382dp"
+        android:layout_height="156dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="Soumettre réclamation"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <!-- Champ Nom et prénom -->
+    <EditText
+        android:id="@+id/nomPrenomEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:drawableStart="@drawable/user"
+        android:hint="Nom et prénom"
+      />
+
+    <!-- Champ Téléphone -->
+    <EditText
+        android:id="@+id/telephoneEditText"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:drawableStart="@drawable/tell"
+        android:hint="Téléphone"
+        android:inputType="phone"
+        />
+
+    <!-- Champ Email -->
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:drawableStart="@drawable/emaill"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        />
+
+    <!-- Champ Sinistre -->
+    <Spinner
+        android:id="@+id/sinistreTextView"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:drawableStart="@drawable/sinistre"
+        android:text="Sinistre"
+       />
+
+    <!-- CheckBoxes pour les options du sinistre -->
+    <!-- LinearLayout horizontal pour les CheckBoxes -->
+
+
+
+    <!-- Champ Description -->
+    <EditText
+        android:id="@+id/descriptionEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/des"
+        android:hint="Description"
+        android:inputType="textMultiLine"
+        android:lines="4"
+        />
+
+    <!-- Bouton de soumission -->
+    <Button
+        android:id="@+id/bouton1"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:onClick="soumettreReclamation"
+        android:text="Envoyer"
+        android:textColor="#1B1A1A"
+        android:textSize="20sp" />
+
+</LinearLayout>

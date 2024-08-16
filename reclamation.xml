@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logoo"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <TextView
+        android:layout_width="386dp"
+        android:layout_height="167dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Reclamations"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+    <!-- Champ ID de Réclamation -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <EditText
+            android:id="@+id/idReclamationEditText"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="-1dp"
+            android:layout_toStartOf="@+id/navigationImageView"
+            android:hint="ID de Réclamation" />
+
+        <ImageView
+            android:id="@+id/navigationImageView"
+            android:layout_width="60dp"
+            android:layout_height="53dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="2dp"
+            android:src="@drawable/search_icon" />
+    </RelativeLayout>
+
+    <!-- Champ pour afficher les détails de la réclamation -->
+    <TextView
+        android:id="@+id/daterecl"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:padding="8dp"
+        android:text="date reclamation"
+        android:textSize="18sp"
+        android:visibility="invisible"/>
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:padding="8dp"
+        android:text="description"
+        android:textSize="18sp"
+        android:visibility="invisible"/>
+    <TextView
+        android:id="@+id/Etat"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:padding="8dp"
+        android:text="Etat"
+        android:textSize="18sp"
+        android:visibility="invisible"/>
+    <TextView
+        android:id="@+id/sinistre"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:padding="8dp"
+        android:text="Sinistre"
+        android:textSize="18sp"
+        android:visibility="invisible"/>
+
+    <!-- Bouton de soumission -->
+    <Button
+        android:id="@+id/buttonrec"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:onClick="soumettreReclamation"
+        android:text="Soumettre la Réclamation"
+        android:textColor="@color/black"
+
+        android:textSize="20sp" />
+
+    <!-- Texte cliquable pour accéder à l'historique des réclamations -->
+
+
+</LinearLayout>

@@ -1,0 +1,107 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/logoo"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:id="@+id/loginTitle"
+            android:layout_width="260dp"
+            android:layout_height="78dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:text="@string/authentification"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/usernameEditText"
+            android:layout_width="318dp"
+            android:layout_height="71dp"
+            android:layout_below="@id/loginTitle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:autofillHints=""
+            android:drawableStart="@drawable/aaaaa"
+            android:hint="@string/num_d_adh_rent"
+            android:textColor="#050505"
+            android:textSize="24sp"
+            tools:ignore="TextFields" />
+
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="336dp"
+            android:layout_height="88dp"
+            android:layout_below="@id/usernameEditText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:drawableStart="@drawable/password"
+            android:hint="@string/mot_de_passe"
+            android:inputType="textPassword"
+            android:textSize="24sp"
+            android:autofillHints="" />
+
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_below="@id/passwordEditText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="109dp"
+            android:text="@string/se_connecter"
+            android:textColor="#171515"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/inscrireLink"
+            android:layout_width="298dp"
+            android:layout_height="58dp"
+            android:layout_below="@id/loginButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="38dp"
+            android:layout_marginEnd="16dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/s_inscrire"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/forgotPasswordLink"
+            android:layout_width="350dp"
+            android:layout_height="64dp"
+            android:layout_below="@id/inscrireLink"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/mot_de_passe_oubli"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</LinearLayout>

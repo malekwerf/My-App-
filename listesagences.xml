@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logoo"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="327dp"
+        android:layout_height="102dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Details agences"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textAdresseAgence"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:text="Adresse de l'agence : "
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/textTelephoneAgence"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:text="Téléphone de l'agence : "
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/textGouvernorat"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:text="Gouvernorat : "
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+
+
+        <ListView
+            android:id="@+id/listViewAgences"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>
+

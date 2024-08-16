@@ -1,0 +1,82 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/contactt">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:text="Nous contacter"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <!-- Champ Nom -->
+    <EditText
+        android:id="@+id/nomEditText"
+        android:layout_width="380dp"
+        android:layout_height="55dp"
+        android:drawableStart="@drawable/nom"
+        android:hint="Nom" />
+
+    <!-- Champ Téléphone -->
+    <EditText
+        android:id="@+id/telephoneEditText"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:hint="Téléphone"
+        android:drawableStart="@drawable/tell"
+        android:inputType="phone" />
+
+    <!-- Champ Société -->
+    <EditText
+        android:id="@+id/societeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:drawableStart="@drawable/soc"
+        android:hint="Société" />
+
+    <!-- Champ Email -->
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:hint="Email"
+android:drawableStart="@drawable/emaill"
+        android:inputType="textEmailAddress" />
+
+    <!-- Champ Objet -->
+    <EditText
+        android:id="@+id/objetEditText"
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:hint="Objet"
+        android:drawableStart="@drawable/ob"/>
+
+    <!-- Champ Message -->
+    <EditText
+        android:id="@+id/messageEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Message"
+        android:drawableStart="@drawable/mess"
+        android:inputType="textMultiLine"
+        android:lines="4" />
+
+    <!-- Bouton de soumission -->
+    <Button
+        android:id="@+id/envoyer"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:onClick="envoyerFormulaire"
+        android:text="Envoyer"
+        android:textColor="#100F0F"
+        android:textSize="20sp" />
+
+</LinearLayout>

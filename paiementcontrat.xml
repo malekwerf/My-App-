@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/logoo">
+
+    <RelativeLayout
+        android:layout_width="380dp"
+        android:layout_height="159dp"
+        android:layout_marginTop="16dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="97dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="Paiement du Contrat"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <!-- Champ Numéro d'adhérent -->
+    <EditText
+        android:id="@+id/numeroAdherentEditText"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:drawableStart="@drawable/adhh"
+        android:gravity="center"
+        android:hint="Numero adherent"
+        android:inputType="number"
+
+        android:textSize="20dp" />
+
+    <!-- Champ ID de Contrat -->
+    <EditText
+        android:id="@+id/idContratEditText"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:drawableStart="@drawable/contr"
+        android:gravity="center"
+        android:hint="   ID  Contrat"
+        android:inputType="number" />
+
+    <!-- Bouton de paiement -->
+    <Button
+        android:id="@+id/paiement"
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:onClick="effectuerPaiement"
+        android:text="Effectuer le Paiement en ligne"
+        android:textColor="#151414"
+        android:textSize="20sp"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

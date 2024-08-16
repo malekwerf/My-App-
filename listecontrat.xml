@@ -1,0 +1,86 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/logoo">
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="327dp"
+        android:layout_height="175dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Mes contrats"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/idcontrat1"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:hint="Id:"
+        android:padding="8dp"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/branche"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Branche:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/date_debut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Date début effet:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/date_fin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Date fin effet:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/montant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Montant:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/dateview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Date_d_expiration:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+
+
+
+
+
+
+
+
+
+</LinearLayout>

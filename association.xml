@@ -1,0 +1,81 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/logoo"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Pack association"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+
+    <!-- activity_pack_association.xml -->
+
+
+        <!-- Spinner pour le choix du type d'assurance -->
+        <EditText
+            android:id="@+id/Nom"
+            android:layout_width="391dp"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/nn"
+            android:ems="10"
+            android:hint="Nom et Prenom" />
+
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="391dp"
+            android:layout_height="71dp"
+            android:drawableStart="@drawable/emaill"
+            android:ems="10"
+            android:hint="Adresse e-mail" />
+
+        <!-- Champ pour saisir l'adresse e-mail -->
+
+        <!-- Bouton de soumission -->
+
+        <EditText
+            android:id="@+id/Numtel"
+            android:layout_width="391dp"
+            android:layout_height="72dp"
+            android:drawableStart="@drawable/tell"
+            android:ems="10"
+            android:hint="Telephone" />
+        <EditText
+            android:id="@+id/proffesion"
+            android:layout_width="391dp"
+            android:layout_height="72dp"
+            android:drawableStart="@drawable/job"
+            android:ems="10"
+            android:hint="Proffesion" />
+
+        <Spinner
+            android:id="@+id/typeAssuranceSpinner"
+            android:layout_width="391dp"
+            android:layout_height="63dp"
+            android:hint="type" />
+
+
+        <Button
+            android:id="@+id/buttonid"
+            android:layout_width="387dp"
+            android:layout_height="77dp"
+            android:onClick="validerPackAssociation"
+            android:text="Valider"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+
+
+</LinearLayout>

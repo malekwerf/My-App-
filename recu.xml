@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:background="@drawable/qss">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/imagemae"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mae"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="TODO" />
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="279dp"
+            android:layout_height="93dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:text="Reçu de Paiement"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewNumeroRecu"
+        android:layout_width="221dp"
+        android:layout_height="40dp"
+        android:text="Numéro de reçu : "
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textViewNom"
+        android:layout_width="210dp"
+        android:layout_height="37dp"
+        android:text="Nom  : "
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textViewPrenom"
+        android:layout_width="210dp"
+        android:layout_height="42dp"
+        android:text="Prenom : "
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textViewMontant"
+        android:layout_width="214dp"
+        android:layout_height="43dp"
+        android:text="Montant payé : "
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textViewDate"
+        android:layout_width="176dp"
+        android:layout_height="48dp"
+        android:text="Date : "
+        android:textSize="18sp" />
+    <Button
+        android:id="@+id/pdfButton"
+        android:layout_width="357dp"
+        android:layout_height="70dp"
+        android:text=" Importer en format PDF"
+        android:textColor="@color/black"
+        android:textSize="24dp" />
+    <Button
+        android:id="@+id/retourAccueilButton"
+        android:layout_width="357dp"
+        android:layout_height="70dp"
+        android:text="Retour à l'accueil"
+        android:textColor="@color/black"
+        android:textSize="24dp" />
+
+</LinearLayout>

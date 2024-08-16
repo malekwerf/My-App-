@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logoo"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="434dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="Pack startup"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+    <!-- TextView pour afficher la vérification -->
+        <!-- Ajoutez ici si nécessaire -->
+
+
+    <EditText
+        android:id="@+id/numAdherentTextView"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:drawableStart="@drawable/adhh"
+        android:hint="Numéro d'adhérent : "
+        android:textSize="18sp" />
+
+    <Spinner
+        android:id="@+id/montantCapitalSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:drawableStart="@drawable/mon"
+        android:hint="Choisir le montant du capital"
+        android:textSize="18sp" />
+
+    <Spinner
+        android:id="@+id/typeAssuranceSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:hint="Choisir le type d'assurance" />
+
+
+    <Button
+        android:id="@+id/soumissioner"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:onClick="soumissioner"
+        android:text="Valider"
+        android:textColor="#0E0D0D"
+        android:textSize="28sp" />
+    </LinearLayout>
+

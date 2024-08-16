@@ -1,0 +1,123 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/logoo">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:layout_width="365dp"
+            android:layout_height="83dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="Paiement "
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+    <!-- Champ Nom -->
+    <EditText
+        android:id="@+id/nomEditText"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:hint="Nom"
+        />
+
+    <!-- Champ Prenom -->
+    <EditText
+        android:id="@+id/prenomEditText"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:hint="Prenom"
+        />
+
+    <!-- Champ Montant -->
+    <TextView
+        android:id="@+id/montantText"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:text="Montant à Payer"
+        android:inputType="numberDecimal" />
+
+    <!-- RadioGroup pour les deux premiers boutons -->
+    <RadioGroup
+        android:id="@+id/carte_radio_group1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Option D17 -->
+        <RadioButton
+            android:id="@+id/d17_radio_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="D17" />
+
+        <!-- Option Carte Visa -->
+        <RadioButton
+            android:id="@+id/carte_visa_radio_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Carte Visa" />
+    </RadioGroup>
+
+    <!-- RadioGroup pour les deux derniers boutons -->
+    <RadioGroup
+        android:id="@+id/carte_radio_group2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Option Mastercard classique -->
+        <RadioButton
+            android:id="@+id/mastercard_classique_radio_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Mastercard classique" />
+
+        <!-- Option Carte Bancaire -->
+        <RadioButton
+            android:id="@+id/cartebancaire_radio_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Carte Bancaire" />
+    </RadioGroup>
+
+    <!-- Champ Date d'Expiration -->
+    <TextView
+        android:id="@+id/editTextDateExpiration"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:inputType="text"
+        android:text="Date d'expiration (MM/AA)"
+        android:textSize="18dp" />
+
+    <!-- Champ CVV -->
+
+    <!-- Bouton de Paiement -->
+    <Button
+        android:id="@+id/paye"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:onClick="payerMaintenant"
+        android:text="Reçu de paiement"
+        android:textColor="#171616"
+        android:textSize="30sp" />
+
+</LinearLayout>
